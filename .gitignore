@@ -1,0 +1,17 @@
+# 运行产物
+run.log
+diag.log
+snap*.png
+.bom.tmp
+*.tmp
+
+# 本机数据（不该进仓库）
+todos.json
+todos.backup*.json
+window.json
+request.json
+result.json
+
+# 依赖
+node_modules/
+pnpm-lock.yaml

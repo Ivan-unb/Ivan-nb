@@ -1,0 +1,45 @@
+{
+  "name": "dsh-todo-note",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Windows 桌面待办便签：粘贴一段话，由 DSH 里已配置的模型拆成时间、地点、事项和要求",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "desktop/desktop-note.ps1",
+    "desktop/start-note.vbs",
+    "install.ps1",
+    "uninstall.ps1",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "todo",
+    "windows",
+    "wpf",
+    "powershell"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivan-unb/Ivan-nb.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
